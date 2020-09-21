@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Electrical Contractors Inc </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="ECI.css">
+	</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1> Electrical Contractors Inc </h1>
+		</header>
+		<nav>
+	<ul>
+		<li> <a href = "index.html"> Home</a> </li>
+		<li class="servicesNav"> <a href = "Services.html">   Services</a> </li>
+		<li> <a href = "About Us.html">  About Us</a> </li>
+		<li> <a href = "Contact Us.html">  Contact Us</a>  </li>
+		<li> <a href = "Web Security.html"> Web Security</a> </li>
+	</ul>
+		</nav>
+		  
+	</div>
+		<div class="container">
+		<main>
+				<div class="row">
+					<div class="col">
+					</div>
+						<div class="col-md-auto">
+		<h2> Contact Us </h2>
+			<p> 12345 Electric Street <br>
+			Contractville, Trexas 54321 <br>
+			Customer Service Line: 555-123-1234 <br>
+			Office Line: 555-321-4321
+			<br> 
+			<hr>
+			<p> At ECI your feedback is important to us. If you have the time we would greatly appreciate any feedback that you can give us to we can provide even better customer service.</p>
+			<form class="contactForm" id="Contactform" action="feedback.html">
+				<label class="text" for="fName">First Name</label>
+				<input required type="text" id="fName1" name="firstname" placeholder="First Name">
+				<p id="fNameError1" class="errorMsg"></p>
+				<label class="text" for="lName">Last Name</label>
+				<input required type="text" id="lName1" name="lastname" placeholder="Last Name">
+				<p id="LNameError1" class="errorMsg"></p>
+				<label for="subject">Subject</label>
+				<textarea required id="subject" name="subject" placeholder="Tell us your thoughts!" style="height:150px"></textarea>
+				<input required type="submit" value="Submit"> 
+				
+			  </form>
+			  <hr>
+	<p>Need a quote? ECI can give accurate quotes on our services. Please fill out the information below and indicate what you are interested in.
+		 Well will have one of our customer service represenatives contact you.</p>
+		<div class="col">
+		</div>
+					</div>
+				</div>
+	</div>
+		</main>
+		 <article class="quote">
+		<h2>Get a Quote</h2>
+		<form action="quotefeed.html">
+		   <fieldset>
+			  <label class="text" for="fName">First Name</label>
+			  <input required type="text" id="fName" />
+			  <p id="fNameError" class="errorMsg"></p>
+			  <label class="text" for="lName">Last Name</label>
+			  <input required type="text" id="lName" />
+			  <p id="lNameError" class="errorMsg"></p>
+			  <label class="text" for="sAddress">Street Address</label>
+			  <input required type="text" id="sAddress" />
+			  <p id="sAddressError" class="errorMsg"></p>
+			  <label class="text" for="zCode">Zip Code</label>
+			  <input required type="text" id="zCode" />
+			  <p id="zCodeError" class="errorMsg"></p>
+			  <label class="text" for="email">Email Address</label>
+			  <input required type="email" id="emailbox" />
+			  <p id="emailError" class="errorMsg"></p>
+			  <label class="text" for="state">State</label>
+			  <select name="state">
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select>
+		   </fieldset>
+		   <fieldset>
+			  <legend><span>Services</span></legend>
+			  <input type="checkbox" onclick="registerquote(event)" id="inspection" value="inspection" name="services" />
+			  <label for="inspection" id="inspectionLabel">Inspection</label>
+			  <input type="checkbox" onclick="registerquote(event)" id="comercial" value="Comercial" name="services" />
+			  <label for="comercial" id="comercialLabel">Comercial</label>
+			  <input type="checkbox" onclick="registerquote(event)" id="residential" value="Residential" name="services" />
+			  <label for="residential" id="residentialLabel">Residential</label>
+			  <input type="checkbox" onclick="registerquote(event)" id="emergencyvisit" value="Emergency Visit" name="services" />
+			  <label for="emergencyvisit" id="emergencyVisitLabel">Emergency Visit</label>
+			  <input type="checkbox" onclick="registerquote(event)" id="supplies" value="Supplies" name="services" />
+			  <label for="supplies" id="suppliesLabel">Supplies</label>
+		   </fieldset>
+		   
+		   <button type="submit" id="submitBtn" value="Submit"> Submit</button>
+		</form>
+		</article>
+
+<footer class ="myFooter">
+	<small>  
+	<i>Copyright © ECI <br>
+	<a href = "dbaitz@ivytech.edu"> dbaitz@ivytech.edu</a></i>
+	</small>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="ECI2.js"></script>
+</body>
+</html>

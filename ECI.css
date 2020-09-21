@@ -1,0 +1,416 @@
+header, main, footer { display: block; }
+#mobile { display: none; }
+#desktop { display: inline; }
+
+/*======================================
+	Navbar
+=======================================*/
+
+.navbar {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 1.5%;
+	padding-top: 1.5%;
+	font-size: 1.3rem;
+}
+
+.navbar-brand {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.navbar-dark .navbar-brand {
+	color: #F3CA5F;
+}
+
+.bg-dark {
+	background-color: #021930!important;
+}
+
+/*======================================
+	Header
+=======================================*/
+
+ header {
+	background-color: #708090;
+	line-height: 100px;
+	width: 100%;
+	top: 0;
+	left: 0;	
+	
+}
+
+/*======================================
+	Footer
+=======================================*/
+
+footer {
+	background-color: #021930;
+	color: #F7F5E9;
+	text-align: center;
+	border-top-color: #000000;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	overflow: hidden;
+	padding-bottom: 8px;
+}
+
+footer .footerTop {
+	background-color: #A8A6A6;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #424459;
+}
+
+footer .footerBottom {
+	padding-top: 60px;
+}
+
+footer p {
+	font-size: 1rem;
+}
+
+.social-media {
+	font-size: 1.5rem;
+}
+
+/*======================================
+	General
+=======================================*/
+
+p { font-size: 1.5em;
+}
+
+ul {
+	list-style: none;
+}
+
+.color-y {
+	color: #F3CA5F;
+}
+
+hr {
+	height: 12px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+body {
+    color: #000000;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+
+h4 {
+	background-color:#D2b48c;
+	font-size: 1.2em;
+	padding-left: .5em;
+	padding-bottom: 0px;
+	text-transform: uppercase;
+	border-bottom: 0px; 
+	clear: left;
+}
+
+main {
+	
+	padding-left: 0px;
+	padding-right: 0px;
+	display: block;
+	padding-top: 0px;
+}
+
+fieldset {
+    border-style: none;
+    -o-border-image: none;
+       border-image: none;
+}
+
+ article {
+	background: #F0EAD6;
+	padding: 5px 0;
+	overflow: auto;
+ }
+
+/*======================================
+	Home Page
+=======================================*/
+.welcome-row,
+.services-row,
+.estimate-row {
+	padding-top: 7rem;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-bottom: 7rem;
+	border-bottom: solid 2px black;
+}	
+
+.welcome-row,
+.estimate-row{
+	background-color: white;
+	text-align: center;
+}
+
+	/*======================================
+		Pic Slides
+	=======================================*/
+#carousel {
+	width: 100%;
+	z-index: 1;
+}
+
+#carousel img {
+	max-height: 100vh;
+	filter: brightness(75%);
+}
+
+.carousel-caption {
+	color: white;
+	width: 650px;
+	left: 10%;
+	top: -30%;
+	margin-top: 20%;
+	height: 20%;
+}
+
+.carousel-caption h5{
+	font-size: 65px;
+	font-weight: bold;
+}
+
+.carousel-caption p {
+	font-size: 50px;
+}
+
+
+
+	/*======================================
+		Welcome
+	=======================================*/
+.welcome-row {
+	justify-content: center;
+	padding-left: 18%;
+	padding-right: 18%;
+}
+
+.welcome-row p {
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-top: 10%;
+	font-size: 20px;
+}
+
+.welcome-row h2 {
+	font-size: 35px;
+	padding-bottom: 10px;
+	border-bottom: solid black 1px;
+}
+
+.checklist-img {
+	text-align: center;
+}
+
+.checklist-img img {
+	max-width: 200px;
+}
+
+	/*======================================
+		Services
+	=======================================*/
+
+.services-row {
+	background-color: #424459;
+	justify-content: center;
+}
+
+.services-row img {
+	border-radius: 10%;
+}
+
+.services-title-row {
+	padding-bottom: 60px;
+	width: 100%;
+	text-align: center;
+
+}
+
+.services-title-row h3{
+	font-size: 3rem;
+	border-bottom: solid #F3CA5F 1px;
+}
+
+.card-holder {
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	text-align: center;
+	align-items: center;
+	width: 90%;
+	height: 100%;
+
+}
+
+.card-img-top {
+	padding: 5px;
+}
+
+.card-text {
+	font-size: 15px;
+	text-align: left;
+}
+
+	/*======================================
+		Estimates
+	=======================================*/
+
+.Estimate {
+	float: right;
+}
+
+.Estimate p {
+	font-size: .7em;		
+}
+
+.Estimate h3 {
+	text-align: center;
+}
+
+.estimate-row {
+	padding-bottom: 10rem;
+	justify-content: center;
+	border-bottom: none;
+}
+
+.estimateForm{
+	border: solid black 1px;
+	padding: 20px;
+
+}
+
+#Estimate h3 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+#Estimate .phone {
+	font-size: 35px;
+	padding-bottom: 20px;
+	color: #DC463D;
+}
+
+#Estimate .estimateBlurb {
+	padding-bottom: 30px;
+}
+
+
+/*======================================
+	Services Page
+=======================================*/
+
+.services-title {
+	text-align: center;
+	padding-top: 5rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 5rem;
+
+}
+
+.services-title h1 {
+	padding-bottom: 20px;
+	font-size: 3rem;
+}
+
+.serviceList {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+#serviceEst {
+	text-align: center;
+	padding-top: 5rem;
+	margin-top: 5rem;
+	background-color: #424459;
+
+}
+
+#serviceEst .estimate-row {
+	padding-top: 40px;
+	background-color: #424459;
+}
+
+#serviceEst .estimate-row .estimateForm {
+	background-color: white;
+}
+
+
+/*======================================
+	About Us Page
+=======================================*/
+
+.aboutUs {
+	padding-top: 5rem;
+	padding-bottom: 7rem;
+	text-align: center;
+}
+
+.aboutBlurb {
+	padding-top: 3rem;
+	text-align: left;
+	font-size: 12px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	body {
+	margin: 0;
+	background-image: none;
+}	
+
+#wrapper {
+	width: auto;
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+}
+
+header {
+	border-bottom: 5px solid;
+	border-bottom-color: #708090;
+}
+	
+h1 {
+	margin-top: 0;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+	
+
+		
+@media only screen and (max-width: 768px) {
+	header {
+	height: 128px;
+}
+	
+h2 {
+	padding-top: 0.5em;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0.5em;
+	margin-right: 0.5em;
+}	 
+
+}
+#mobile { display: inline; }
+#desktop { display: none; }
+}
+
+}	
